@@ -8,7 +8,7 @@ import com.krakedev.evaluacion.servicios.ServiciosProductos;
 public class TestActializarProducto {
 
 	public static void main(String[] args) {
-		Producto pro = new Producto("P1", "Lolipop", "C1");
+		Producto pro = new Producto("P0001", "Lolipop", "C001");
 		try {
 
 			pro.setPrecioVenta(new BigDecimal(1.00));
