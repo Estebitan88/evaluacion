@@ -16,7 +16,7 @@ public class ConsultarProductos {
 	private static final Logger LOGGER = LogManager.getLogger(ConsultarProductos.class);
 	
 	public static ArrayList<Producto>buscarPorCategoria(String id_categoria) throws Exception {
-		ArrayList<Producto> productos = new ArrayList<>();
+		ArrayList<Producto> productos = new ArrayList<Producto>();
         Connection con = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
