@@ -12,14 +12,12 @@ public class TestActualizarCategoria {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Categoria cat = new Categoria("C4","Gomitas");
-        try {
-            cat.setNombre("Pal");
-            ServiciosCategoria.actualizar(cat);
-        } catch (Exception e) {
-            System.out.println("Error en el sistema: " + e.getMessage());
-        }
-    }
+		Categoria cat = new Categoria("C4", "Gomitas");
+		try {
+			cat.setNombre("Pal");
+			ServiciosCategoria.actualizar(cat);
+		} catch (Exception e) {
+			System.out.println("Error en el sistema: " + e.getMessage());
+		}
 	}
-
-
+}

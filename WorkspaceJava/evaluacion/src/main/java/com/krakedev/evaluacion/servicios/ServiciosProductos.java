@@ -52,7 +52,7 @@ public class ServiciosProductos {
 			con = ConexionBBD.conectar();
 
 			ps = con.prepareStatement(
-					"UPDATE productos SET nombre=? ,precio_venta,precio_compra,id_categoria WHERE id=?");
+					"UPDATE productos SET nombre=? ,precio_venta=?,precio_compra=?,id_categoria=? WHERE id=?");
 
 			ps.setString(1, producto.getNombre());
 			ps.setBigDecimal(2, producto.getPrecioVenta());
