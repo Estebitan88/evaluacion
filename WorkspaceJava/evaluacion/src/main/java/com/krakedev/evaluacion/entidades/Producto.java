@@ -3,17 +3,28 @@ package com.krakedev.evaluacion.entidades;
 import java.math.BigDecimal;
 
 public class Producto {
-	private int id;
+	private String id;
 	private String nombre;
 	private BigDecimal precioVenta;
 	private BigDecimal precioCompra;
-	private int idCategoria;
-	
+	private String idCategoria;
+
 	public Producto() {
-		
+
 	}
 	
-	public Producto(int id, String nombre, BigDecimal precioVenta, BigDecimal precioCompra, int idCategoria) {
+	
+
+	public Producto(String id, String nombre, String idCategoria) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.idCategoria = idCategoria;
+	}
+
+
+
+	public Producto(String id, String nombre, BigDecimal precioVenta, BigDecimal precioCompra, String idCategoria) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -21,34 +32,44 @@ public class Producto {
 		this.precioCompra = precioCompra;
 		this.idCategoria = idCategoria;
 	}
-	public int getId() {
+
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+
+	public void setId(String id) {
 		this.id = id;
 	}
+
 	public String getNombre() {
 		return nombre;
 	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 	public BigDecimal getPrecioVenta() {
 		return precioVenta;
 	}
+
 	public void setPrecioVenta(BigDecimal precioVenta) {
 		this.precioVenta = precioVenta;
 	}
+
 	public BigDecimal getPrecioCompra() {
 		return precioCompra;
 	}
+
 	public void setPrecioCompra(BigDecimal precioCompra) {
 		this.precioCompra = precioCompra;
 	}
-	public int getIdCategoria() {
+
+	public String getIdCategoria() {
 		return idCategoria;
 	}
-	public void setIdCategoria(int idCategoria) {
+
+	public void setIdCategoria(String idCategoria) {
 		this.idCategoria = idCategoria;
 	}
 
@@ -57,7 +78,5 @@ public class Producto {
 		return "Producto [id=" + id + ", nombre=" + nombre + ", precioVenta=" + precioVenta + ", precioCompra="
 				+ precioCompra + ", idCategoria=" + idCategoria + "]";
 	}
-	
-	
-	
+
 }
